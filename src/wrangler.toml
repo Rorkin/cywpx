@@ -1,0 +1,19 @@
+name = "cywpx"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# KV 命名空间绑定（用于存储配置和优选IP）
+[[kv_namespaces]]
+binding = "CFKV"
+id = "your-kv-namespace-id"
+
+# 定时任务 - 每6小时自动更新优选IP
+[triggers]
+crons = ["0 */6 * * *"]
+
+# 环境变量（建议在 Dashboard 中设置，不要写在这里）
+# [vars]
+# UUID = "your-uuid-here"
+# ADMIN_PASS = "your-admin-password"
+# PROXY_IP = ""
