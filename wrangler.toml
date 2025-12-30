@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # KV 命名空间绑定（用于存储配置和优选IP）
 [[kv_namespaces]]
 binding = "CFKV"
-id = "your-kv-namespace-id"
+id = "1b124f3ee5f74c22859166b6b5a092c1"
 
 # 定时任务 - 每6小时自动更新优选IP
 [triggers]
